@@ -1,0 +1,103 @@
+body {
+    font-family: 'Fira Code', monospace; /* Fuente de estilo programador */
+    background-color: #1e1e1e; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Asegura que no se vean bordes fuera de la caja */
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #2a2a2a; /* Sección de texto en un gris más claro */
+    border-right: 5px solid #2a2a2a; /* Línea de separación azul */
+}
+
+.animation-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c; /* Fondo del monitor */
+}
+
+.monitor {
+    width: 400px;
+    height: 300px;
+    border: 10px solid #2a2a2a; /* Bordes azules */
+    border-radius: 10px;
+    background-color: black; /* Fondo del monitor */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.code-output {
+    color: #00ff00; /* Color verde para el texto del código */
+    font-family: 'Courier New', Courier, monospace; /* Fuente monoespaciada para código */
+    white-space: pre;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.start-button {
+    background-color: #ffcc00; /* Fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1em; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor a mano */
+    transition: background-color 0.3s; /* Efecto de transición para el color */
+    margin-top: 20px; /* Espacio arriba del botón */
+}
+
+.start-button:hover {
+    background-color: #005f99; /* Color más oscuro al pasar el mouse */
+}
+
+h1 {
+    color: #ffcc00; /* Color amarillo para el título */
+    margin: 0 0 10px 0; /* Margen inferior */
+}
+
+p {
+    color: #b0b0b0; /* Color gris claro para los párrafos */
+    margin: 5px 0; /* Margen entre párrafos */
+}
+
+.large {
+    font-size: 1.5em; /* Tamaño grande */
+}
+
+.medium {
+    font-size: 1.2em; /* Tamaño medio */
+}
+
+.small {
+    font-size: 1em; /* Tamaño normal */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        width: 100%;
+    }
+
+    .monitor {
+        width: 90%;
+    }
+}
