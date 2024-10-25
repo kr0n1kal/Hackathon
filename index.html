@@ -9,16 +9,28 @@
 <body>
     <div class="container">
         <div class="text-section">
-            <h1>Bienvenido a la Programación</h1>
-            <p class="large">Aprender a programar es divertido y emocionante.</p>
+            <h1>Bienvenido a Code Learning!</h1>
+            <p class="large">Una página interactiva en la cual pondrás a prueba tus conocimientos sobre programación.</p>
             <p class="medium">Aquí encontrarás recursos para comenzar tu viaje.</p>
-            <p class="small">¡Comencemos a codificar!</p>
+            <p class="small">¡Comencemos a programar!</p>
             <button class="start-button">Empecemos</button>
+            <button class="theme-toggle">Modo Claro/Oscuro</button>
         </div>
         <div class="animation-section">
             <div class="monitor">
                 <div class="code-output"></div>
             </div>
+        </div>
+    </div>
+    <div class="modal" id="codeChallenge">
+        <div class="modal-content">
+            <h2>Reto Rápido</h2>
+            <p>Corrige el siguiente código para que sume correctamente dos números:</p>
+            <pre>function sumar(a, b) { return a - b; }</pre>
+            <textarea class="code-input" placeholder="Escribe tu corrección aquí..."></textarea>
+            <button class="run-challenge">Ejecutar</button>
+            <p class="challenge-output"></p>
+            <button class="close-modal">Cerrar</button>
         </div>
     </div>
     <script src="script.js"></script>
